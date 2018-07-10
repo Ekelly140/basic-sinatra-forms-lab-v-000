@@ -11,7 +11,11 @@ class App < Sinatra::Base
     @pf = params["pf"]
     @c = params["c"]
 
-     erb :team
+     erb :newteam
+  end
+
+  post '/team' do
+    erb :team
   end
 
 
