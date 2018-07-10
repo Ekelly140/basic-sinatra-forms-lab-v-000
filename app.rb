@@ -13,5 +13,9 @@ class App < Sinatra::Base
     @c = params["c"]
   end
 
+  get '/team' do 
+    erb :team
+  end 
+
 
 end
