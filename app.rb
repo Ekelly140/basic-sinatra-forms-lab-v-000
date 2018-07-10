@@ -2,7 +2,7 @@ require 'sinatra/base'
 
 class App < Sinatra::Base
 
-  get '/newteam' do
+  post '/newteam' do
     erb :newteam
     @team = params["name"]
     @coach = params["coach"]
